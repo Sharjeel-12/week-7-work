@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\api.js",
+      "PackagePath": "staticwebassets\\api.js"
+    },
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\dashboard.html",
+      "PackagePath": "staticwebassets\\dashboard.html"
+    },
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\carelite work\\trial 2\\clinic-application\\clinic application\\Backend\\PatientVisitManager.Api\\wwwroot\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PatientVisitManager.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.PatientVisitManager.Api.props",
+      "PackagePath": "build\\PatientVisitManager.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.PatientVisitManager.Api.props",
+      "PackagePath": "buildMultiTargeting\\PatientVisitManager.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.PatientVisitManager.Api.props",
+      "PackagePath": "buildTransitive\\PatientVisitManager.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

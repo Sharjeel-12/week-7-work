@@ -1,0 +1,6 @@
+wwwroot\api.js
+wwwroot\app.js
+wwwroot\dashboard.html
+wwwroot\index.html
+wwwroot\login.html
+wwwroot\styles.css

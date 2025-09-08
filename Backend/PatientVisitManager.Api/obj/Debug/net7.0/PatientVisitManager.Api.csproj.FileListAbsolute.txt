@@ -1,0 +1,682 @@
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.endpoints.json
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\rpswa.dswa.cache.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\rjimswa.dswa.cache.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientV.36E8C508.Up2Date
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+F:\CureMD Work\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+F:\CureMD Work\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.endpoints.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\rpswa.dswa.cache.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\rjimswa.dswa.cache.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientV.36E8C508.Up2Date
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+F:\CureMD Work\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.PatientVisitManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CopyComplete
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+C:\Users\sharjeel.farzad\Dynamic-Visuals-using-JavaScript\New folder (2)\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.PatientVisitManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PatientVisitManager.Api.props
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CopyComplete
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+C:\Users\sharjeel.farzad\muhammad-sharjeel-6609\assignment-08\Backend\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.PatientVisitManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PatientVisitManager.Api.props
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PatientVisitManager.Api.props
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PatientVisitManager.Api.props
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CopyComplete
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+C:\Backend\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.endpoints.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\rpswa.dswa.cache.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.sourcelink.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\rjimswa.dswa.cache.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\rjsmrazor.dswa.cache.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\rjsmcshtml.dswa.cache.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientV.36E8C508.Up2Date
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+E:\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\appsettings.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.staticwebassets.runtime.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.exe
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.deps.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.runtimeconfig.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Core.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Azure.Identity.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.ClientModel.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Memory.Data.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Text.Json.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.AssemblyReference.cache
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfoInputs.cache
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.AssemblyInfo.cs
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CoreCompileInputs.cache
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.PatientVisitManager.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.PatientVisitManager.Api.props
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PatientVisitManager.Api.props
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.PatientVisitManager.Api.props
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.build.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\staticwebassets.development.json
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\scopedcss\bundle\PatientVisitManager.Api.styles.css
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.csproj.CopyComplete
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\refint\PatientVisitManager.Api.dll
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.pdb
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\PatientVisitManager.Api.genruntimeconfig.cache
+C:\carelite work\trial 2\clinic-application\clinic application\Backend\PatientVisitManager.Api\obj\Debug\net7.0\ref\PatientVisitManager.Api.dll
