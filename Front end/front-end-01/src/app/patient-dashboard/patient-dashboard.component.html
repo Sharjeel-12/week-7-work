@@ -1,0 +1,162 @@
+  <h2 class="section-title">Patients</h2>
+  <div>
+    <label for="search-field">Search patient record here</label>
+    <br>
+    <input
+    type="text"
+    id="search-field"
+    placeholder="Search patients by ID, name, email, or phone..."
+    [searchFilter]="AllPatients"
+    [searchFields]="['patientID','patientName','patientEmail','patientPhone','patientDescription']"
+    [minChars]="1"
+    [showAllWhenEmpty]="true"
+    (searchResults)="visiblePatients = $event"
+  />
+
+  </div>
+  <button (click)="activateForm()" class="add-btn">+Add New Patient</button>
+  @if(AddBtnPressed){
+    <form [formGroup]="addPatientForm" (ngSubmit)="onSubmit()" id="addPatientForm" class="patient-form">
+    <div>
+      <label for="patientID">Patient ID</label><br/>
+      <input formControlName="patientID" type="number" id="patientID" name="patientID" />
+    @if(AddForm['patientID'].touched && AddForm['patientID'].invalid){
+    <div class="err-msg">Enter a valid patient ID</div>  
+    }
+    </div>
+
+    <div>
+      <label for="patientName">Patient Name</label><br/>
+      <input formControlName="patientName" type="text" id="patientName" name="patientName" />
+    @if(AddForm['patientName'].touched && AddForm['patientName'].invalid){
+    <div class="err-msg">Enter a valid patient Name</div>  
+    }
+    </div>
+
+    <div>
+      <label for="patientEmail">Patient Email</label><br/>
+      <input formControlName="patientEmail" type="text" id="patientEmail" name="patientEmail" />
+    @if(AddForm['patientEmail'].touched && AddForm['patientEmail'].invalid){
+    @if(AddForm['patientEmail'].errors?.["required"]){
+    <div class="err-msg">Username is required</div>
+    }
+    @if(AddForm['patientEmail'].errors?.["minlength"]){
+    <div class="err-msg">Username must be at least {{AddForm['patientEmail'].errors?.['minlength'].requiredLength}} characters.</div>
+    }  
+    }
+    </div>
+
+    <div>
+      <label for="patientPhone">Patient Phone</label><br/>
+      <input formControlName="patientPhone" type="text" id="patientPhone" name="patientPhone" />
+    @if(AddForm['patientPhone'].touched && AddForm['patientPhone'].invalid){
+    <div class="err-msg">Enter a valid patient Phone</div>  
+    }
+    
+    </div>
+
+    <div>
+      <label for="patientDescription">Patient Description</label><br/>
+      <textarea formControlName="patientDescription" id="patientDescription" name="patientDescription"></textarea>
+    </div>
+
+    <div>
+      <button  [disabled]="!(addPatientForm.valid)" type="submit" >Add Patient</button>
+      <button (click)="deactivateForm()">cancel</button>
+    </div>
+  </form>
+  }
+
+<!-- Edit button form starts here   -->
+@if(EditBtnPressed){
+    <form [formGroup]="editPatientForm" (ngSubmit)="onEdit()" id="editPatientForm" class="patient-form">
+    <div>
+      <label for="patientID">Patient ID</label><br/>
+      <input formControlName="patientID" type="number" id="patientID" name="patientID" />
+    @if(EditForm['patientID'].touched && EditForm['patientID'].invalid){
+    <div class="err-msg">Enter a valid patient ID</div>  
+    }
+    </div>
+    
+    <div>
+      <label for="visitID">Visit ID</label><br/>
+      <input formControlName="visitID" type="number" id="visitID" name="visitID" />
+    </div>
+
+    <div>
+      <label for="patientName">Patient Name</label><br/>
+      <input formControlName="patientName" type="text" id="patientName" name="patientName" />
+        @if(EditForm['patientName'].touched && EditForm['patientName'].invalid){
+    <div class="err-msg">Enter a valid patient Name</div>  
+    }
+    </div>
+
+    <div>
+      <label for="patientEmail">Patient Email</label><br/>
+      <input formControlName="patientEmail" type="text" id="patientEmail" name="patientEmail" />
+        @if(EditForm['patientEmail'].touched && EditForm['patientEmail'].invalid){
+    @if(EditForm['patientEmail'].errors?.["required"]){
+    <div class="err-msg">Username is required</div>
+    }
+    @if(EditForm['patientEmail'].errors?.["minlength"]){
+    <div class="err-msg">Username must be at least {{EditForm['patientEmail'].errors?.['minlength'].requiredLength}} characters.</div>
+    }  
+    }
+    </div>
+
+    <div>
+      <label for="patientPhone">Patient Phone</label><br/>
+      <input formControlName="patientPhone" type="text" id="patientPhone" name="patientPhone" />
+        @if(EditForm['patientPhone'].touched && EditForm['patientPhone'].invalid){
+    <div class="err-msg">this can't be blank</div>  
+    }
+    </div>
+
+    <div>
+      <label for="patientDescription">Patient Description</label><br/>
+      <textarea formControlName="patientDescription" id="patientDescription" name="patientDescription"></textarea>
+    </div>
+
+    <div>
+      <button  [disabled]="!(editPatientForm.valid)" type="submit" >Edit Patient Record</button>
+      <button (click)="deactivateEditForm()">cancel</button>
+    </div>
+  </form>
+  }
+
+
+
+
+<table class="patients-table">
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <!-- <th>Visit ID</th> -->
+      <th>Patient Name</th>
+      <th>Patient Email</th>
+      <th>Patient Phone</th>
+      <th>Patient Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+
+@for(patient of visiblePatients; track patient){
+    <tr>
+      <td>{{patient.patientID}}</td>
+      <!-- <td>{{patient.visitID}}</td> -->
+      <td>{{patient.patientName}}</td>
+      <td>{{patient.patientEmail}}</td>
+      <td>{{patient.patientPhone}}</td>
+      <td>{{patient.patientDescription}}</td>
+      <td class="actions">
+        <button type="button" class="btn btn-edit" (click)="activateEditForm(patient)">Edit</button>
+        <button type="button" class="btn btn-delete" (click)="deleteAction(patient.patientID)">Delete</button>
+      </td>
+    </tr>
+}
+  </tbody>
+</table>
+
+
+
