@@ -12,39 +12,65 @@ public class VisitRepository : BaseRepository, IVisitRepository
         var list = new List<Visit>();
         using var conn = CreateConn(); await conn.OpenAsync();
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = "SELECT visitID, visitType, VisittypeID, visitDuration, visitDate, visitTime, visitFee FROM dbo.Visits";
+        cmd.CommandText = @"SELECT visitID, visitType, visitTypeID, visitDuration, visitDate, visitTime, visitFee, PatientID, DoctorID 
+                        FROM dbo.Visits";
         using var r = await cmd.ExecuteReaderAsync();
         while (await r.ReadAsync())
         {
             var date = r.GetDateTime(4);
             var time = r.GetTimeSpan(5);
-            list.Add(new Visit { VisitID = r.GetInt32(0), VisitType = r.GetString(1), VisitTypeID = r.IsDBNull(2) ? null : r.GetInt32(2), VisitDuration = r.GetInt32(3), VisitDate = date + time, VisitFee = r.GetDecimal(6) });
+            list.Add(new Visit
+            {
+                VisitID = r.GetInt32(0),
+                VisitType = r.GetString(1),
+                VisitTypeID = r.IsDBNull(2) ? null : r.GetInt32(2),
+                VisitDuration = r.GetInt32(3),
+                VisitDate = date + time,
+                VisitFee = r.GetDecimal(6),
+                PatientID = r.GetInt32(7),   
+                DoctorID = r.GetInt32(8)     
+            });
         }
         return list;
     }
+
 
     public async Task<Visit?> GetByIdAsync(int id)
     {
         using var conn = CreateConn(); await conn.OpenAsync();
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = "SELECT visitID, visitType, VisittypeID, visitDuration, visitDate, visitTime, visitFee FROM dbo.Visits WHERE visitID=@Id";
+        cmd.CommandText = @"SELECT visitID, visitType, visitTypeID, visitDuration, visitDate, visitTime, visitFee, PatientID, DoctorID 
+                        FROM dbo.Visits WHERE visitID=@Id";
         cmd.Parameters.AddWithValue("@Id", id);
         using var r = await cmd.ExecuteReaderAsync();
         if (await r.ReadAsync())
         {
             var date = r.GetDateTime(4);
             var time = r.GetTimeSpan(5);
-            return new Visit { VisitID = r.GetInt32(0), VisitType = r.GetString(1), VisitTypeID = r.IsDBNull(2) ? null : r.GetInt32(2), VisitDuration = r.GetInt32(3), VisitDate = date + time, VisitFee = r.GetDecimal(6) };
+            return new Visit
+            {
+                VisitID = r.GetInt32(0),
+                VisitType = r.GetString(1),
+                VisitTypeID = r.IsDBNull(2) ? null : r.GetInt32(2),
+                VisitDuration = r.GetInt32(3),
+                VisitDate = date + time,
+                VisitFee = r.GetDecimal(6),
+                PatientID = r.GetInt32(7),   
+                DoctorID = r.GetInt32(8)     
+            };
         }
         return null;
     }
+
 
     public async Task<int> CreateAsync(Visit v)
     {
         using var conn = CreateConn(); await conn.OpenAsync();
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = @"INSERT INTO dbo.Visits (visitID, visitType, VisittypeID, visitDuration, visitDate, visitTime, visitFee)
-                            OUTPUT INSERTED.visitID VALUES (@VID,@T,@TID,@Dur,@Date,@Time,@Fee)";
+        cmd.CommandText = @"INSERT INTO dbo.Visits 
+                        (visitID, visitType, visitTypeID, visitDuration, visitDate, visitTime, visitFee, PatientID, DoctorID)
+                        OUTPUT INSERTED.visitID 
+                        VALUES (@VID,@T,@TID,@Dur,@Date,@Time,@Fee,@PID,@DID)";
         cmd.Parameters.AddWithValue("@VID", v.VisitID);
         cmd.Parameters.AddWithValue("@T", v.VisitType);
         cmd.Parameters.AddWithValue("@TID", (object?)v.VisitTypeID ?? DBNull.Value);
@@ -52,21 +78,28 @@ public class VisitRepository : BaseRepository, IVisitRepository
         cmd.Parameters.AddWithValue("@Date", v.VisitDate.Date);
         cmd.Parameters.AddWithValue("@Time", v.VisitDate.TimeOfDay);
         cmd.Parameters.AddWithValue("@Fee", v.VisitFee);
-        var rows=await cmd.ExecuteNonQueryAsync();
-        return v.VisitID;
+        cmd.Parameters.AddWithValue("@PID", v.PatientID);   
+        cmd.Parameters.AddWithValue("@DID", v.DoctorID);    
+        return (int)await cmd.ExecuteScalarAsync();
     }
 
     public async Task UpdateAsync(Visit v)
     {
         using var conn = CreateConn(); await conn.OpenAsync();
         using var cmd = conn.CreateCommand();
-        cmd.CommandText = @"UPDATE dbo.Visits SET visitType=@T, VisittypeID=@TID, visitDuration=@Dur, visitDate=@Date, visitTime=@Time, visitFee=@Fee WHERE visitID=@Id";
+        cmd.CommandText = @"UPDATE dbo.Visits 
+                        SET visitType=@T, visitTypeID=@TID, visitDuration=@Dur, 
+                            visitDate=@Date, visitTime=@Time, visitFee=@Fee, 
+                            PatientID=@PID, DoctorID=@DID
+                        WHERE visitID=@Id";
         cmd.Parameters.AddWithValue("@T", v.VisitType);
         cmd.Parameters.AddWithValue("@TID", (object?)v.VisitTypeID ?? DBNull.Value);
         cmd.Parameters.AddWithValue("@Dur", v.VisitDuration);
         cmd.Parameters.AddWithValue("@Date", v.VisitDate.Date);
         cmd.Parameters.AddWithValue("@Time", v.VisitDate.TimeOfDay);
         cmd.Parameters.AddWithValue("@Fee", v.VisitFee);
+        cmd.Parameters.AddWithValue("@PID", v.PatientID);   
+        cmd.Parameters.AddWithValue("@DID", v.DoctorID);    
         cmd.Parameters.AddWithValue("@Id", v.VisitID);
         await cmd.ExecuteNonQueryAsync();
     }

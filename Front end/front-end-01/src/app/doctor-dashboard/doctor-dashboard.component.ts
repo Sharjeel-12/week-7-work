@@ -152,10 +152,7 @@ export class DoctorDashboardComponent {
 
   // deletes the doctor record 
   deleteAction(id: number): void {
-     this.dataService.getDoctorByID(id).subscribe(
-{
-  next:(d_delete)=>{
-    if(this.AllVisits.some(v=>v.visitID==d_delete.visitID)){
+ if(this.AllVisits.some(v=>v.doctorID==id)){
       alert("Sorry this doctor record cannot be deleted as this doctor has a scheduled appointment");
     }
     else{
@@ -169,9 +166,6 @@ export class DoctorDashboardComponent {
       )
       
     }
-  }
-}
-)
   }
 
 

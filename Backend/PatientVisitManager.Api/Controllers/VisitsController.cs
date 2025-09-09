@@ -25,26 +25,53 @@ public class VisitsController : ControllerBase
         return v is null ? NotFound() : v;
     }
 
+
     [HttpPost]
     [Authorize(Policy = "RequireReceptionistOrAdmin")]
     public async Task<ActionResult> Create([FromBody] CreateVisitDto dto)
     {
         var perMin = await _repo.GetFeePerMinuteByVisitTypeAsync(dto.VisitType);
         var fee = _calc.Calculate(dto.VisitType, dto.VisitDuration, perMin);
-        var id = await _repo.CreateAsync(new Visit { VisitID=dto.VisitID, VisitType = dto.VisitType, VisitTypeID = dto.VisitTypeID, VisitDuration = dto.VisitDuration, VisitDate = dto.VisitDate, VisitFee = fee });
-        //await _log.LogAsync(User.Identity?.Name ?? "unknown", $"Created visit {id}");
+
+        var id = await _repo.CreateAsync(new Visit
+        {
+            VisitID = dto.VisitID,
+            VisitType = dto.VisitType,
+            VisitTypeID = dto.VisitTypeID,
+            VisitDuration = dto.VisitDuration,
+            VisitDate = dto.VisitDate,
+            VisitTime = dto.VisitTime,
+            VisitFee = fee,
+            PatientID = dto.PatientID,
+            DoctorID = dto.DoctorID      
+        });
+
         return CreatedAtAction(nameof(Get), new { id }, new { id });
     }
+
 
     [HttpPut("{id:int}")]
     [Authorize(Policy = "RequireReceptionistOrAdmin")]
     public async Task<IActionResult> Update(int id, [FromBody] UpdateVisitDto dto)
     {
         if (id != dto.VisitID) return BadRequest("ID mismatch");
+
         var perMin = await _repo.GetFeePerMinuteByVisitTypeAsync(dto.VisitType);
         var fee = _calc.Calculate(dto.VisitType, dto.VisitDuration, perMin);
-        await _repo.UpdateAsync(new Visit { VisitID = dto.VisitID, VisitType = dto.VisitType, VisitTypeID = dto.VisitTypeID, VisitDuration = dto.VisitDuration, VisitDate = dto.VisitDate, VisitFee = fee });
-        //await _log.LogAsync(User.Identity?.Name ?? "unknown", $"Updated visit {id}");
+
+        await _repo.UpdateAsync(new Visit
+        {
+            VisitID = dto.VisitID,
+            VisitType = dto.VisitType,
+            VisitTypeID = dto.VisitTypeID,
+            VisitDuration = dto.VisitDuration,
+            VisitDate = dto.VisitDate,
+            VisitTime = dto.VisitTime,
+            VisitFee = fee,
+            PatientID = dto.PatientID,
+            DoctorID = dto.DoctorID     
+        });
+
         return NoContent();
     }
 

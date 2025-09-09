@@ -1,151 +1,167 @@
 <h2 class="section-title">Visits</h2>
-<button (click)="activateForm()" class="add-btn">+Add New Visit</button>
+<button (click)="activateForm()" class="add-btn">+ Add New Visit</button>
 
+<!-- ADD FORM -->
 @if (AddBtnPressed) {
-<form [formGroup]="addVisitForm" (ngSubmit)="onSubmit()" id="addVisitForm" class="visit-form">
-  <div>
-    <label for="visitID">Visit ID</label><br />
-    <input formControlName="visitID" type="number" id="visitID" name="visitID" />
-  </div>
+  <form [formGroup]="addVisitForm" (ngSubmit)="onSubmit()" id="addVisitForm" class="visit-form">
+    <div>
+      <label for="visitID">Visit ID</label><br />
+      <input formControlName="visitID" type="number" id="visitID" name="visitID" readonly />
+    </div>
 
-  <div>
-    <label for="visitType">Visit Type</label><br />
-        <select formControlName="visitType" id="visitType" name="visitType" >
-      <option value="" disabled>select the visit type</option>
-      <option value="Consultation">Consultation</option>
-      <option value="Follow-up">Follow-up</option>
-      <option value="Emergency">Emergency</option>
-      </select>
-  </div>
-
-  <div>
-    <label for="visitTypeID">Visit Type ID</label><br />
-    <input formControlName="visitTypeID" type="number" id="visitTypeID" name="visitTypeID" />
-  </div>
-
-  <div>
-    
-    <label for="visitDuration">Visit Duration (min)</label><br />
-    <select formControlName="visitDuration" id="visitDuration" name="visitDuration" >
-      <option value="" disabled>select the duration (min)</option>
-      <option value="15">15</option>
-      <option value="30">30</option>
-      <option value="60">60</option>
-      </select>
-  </div>
-
-<div>
-  <label for="visitDate">Visit Date/Time</label><br />
-  <input
-    formControlName="visitDate"
-    type="datetime-local"
-    id="visitDate"
-    name="visitDate"
-    businessHours
-    businessHoursStart="09:00"
-    businessHoursEnd="21:00"
-    businessHoursDays="1,2,3,4,5,6"
-  />
-
-  @if (addVisitForm.get('visitDate')?.touched) {
-    @if (addVisitForm.get('visitDate')?.errors?.['businessHours']; as err) {
-      <div class="error">
-        @switch (err.reason) {
-          @case ('invalidDate') { Please pick a valid date and time. }
-          @case ('nonWorkingDay') { Only Mon–Sat are allowed. }
-          @case ('offHours') {
-            Time must be between {{ err.allowed.start }} and {{ err.allowed.end }}
-            {{ err.allowed.endInclusive ? '(inclusive)' : '' }}. You chose {{ err.picked }}.
-          }
+    <div>
+      <label for="patientID">Patient</label><br />
+      <select formControlName="patientID" id="patientID" name="patientID">
+        <option [ngValue]="null" disabled>Select a patient</option>
+        @for (p of AllPatients; track p.patientID) {
+          <option [ngValue]="p.patientID">{{ p.patientName }}</option>
         }
-      </div>
-    }
-  }
-</div>
+      </select>
+    </div>
 
+    <div>
+      <label for="doctorID">Doctor</label><br />
+      <select formControlName="doctorID" id="doctorID" name="doctorID">
+        <option [ngValue]="null" disabled>Select a doctor</option>
+        @for (d of AllDoctors; track d.doctorID) {
+          <option [ngValue]="d.doctorID">{{ d.doctorName }}</option>
+        }
+      </select>
+    </div>
 
-  <!-- <div>
-    <label for="visitFee">Visit Fee</label><br />
-    <input formControlName="visitFee" type="number" id="visitFee" name="visitFee" />
-  </div> -->
+    <div>
+      <label for="visitType">Visit Type</label><br />
+      <select formControlName="visitType" id="visitType" name="visitType">
+        <option [ngValue]="null" disabled>Select the visit type</option>
+        <option [ngValue]="'Consultation'">Consultation</option>
+        <option [ngValue]="'Follow-Up'">Follow-Up</option>
+        <option [ngValue]="'Emergency'">Emergency</option>
+      </select>
+    </div>
 
-  <div>
-    <button type="submit" [disabled]="addVisitForm.invalid || addVisitForm.pending">Add Visit</button>
-    <button type="button" (click)="deactivateForm()">cancel</button>
-  </div>
-</form>
+    <div>
+      <label for="visitDuration">Visit Duration (min)</label><br />
+      <select formControlName="visitDuration" id="visitDuration" name="visitDuration">
+        <option [ngValue]="null" disabled>Select the duration (min)</option>
+        @for (duration of durationOptions; track duration) {
+          <option [ngValue]="duration">{{ duration }}</option>
+        }
+      </select>
+    </div>
+
+    <div>
+      <label for="visitDate">Visit Date/Time</label><br />
+      <input
+        formControlName="visitDate"
+        type="datetime-local"
+        id="visitDate"
+        name="visitDate"
+        businessHours
+        businessHoursStart="09:00"
+        businessHoursEnd="21:00"
+        businessHoursDays="1,2,3,4,5,6"
+      />
+
+      @if (addVisitForm.get('visitDate')?.touched) {
+        @if (addVisitForm.get('visitDate')?.errors?.['businessHours']; as err) {
+          <div class="error">
+            @switch (err.reason) {
+              @case ('invalidDate') { Please pick a valid date and time. }
+              @case ('nonWorkingDay') { Only Mon-Sat are allowed. }
+              @case ('offHours') {
+                Time must be between {{ err.allowed.start }} and {{ err.allowed.end }}
+                {{ err.allowed.endInclusive ? '(inclusive)' : '' }}.
+                You chose {{ err.picked }}.
+              }
+            }
+          </div>
+        }
+      }
+    </div>
+
+    <!-- <div>
+      <label for="visitFee">Visit Fee</label><br />
+      <input formControlName="visitFee" type="number" id="visitFee" name="visitFee" min="0" />
+    </div> -->
+
+    <div>
+      <button type="submit" [disabled]="addVisitForm.invalid">Add Visit</button>
+      <button type="button" (click)="deactivateForm()">Cancel</button>
+    </div>
+  </form>
 }
 
+<!-- EDIT FORM -->
 @if (EditBtnPressed) {
-<form [formGroup]="editVisitForm" (ngSubmit)="onEdit()" id="editVisitForm" class="visit-form">
-  <div>
-    <label for="e_visitID">Visit ID</label><br />
-    <input formControlName="visitID" type="number" id="e_visitID" name="visitID" />
-  </div>
+  <form [formGroup]="editVisitForm" (ngSubmit)="onEdit()" id="editVisitForm" class="visit-form">
+    <div>
+      <label for="e_visitID">Visit ID</label><br />
+      <input formControlName="visitID" type="number" id="e_visitID" name="visitID" readonly />
+    </div>
 
-  <div>
-    <label for="e_visitType">Visit Type</label><br />
-    <input formControlName="visitType" type="text" id="e_visitType" name="visitType" />
-  </div>
-
-  <div>
-    <label for="e_visitTypeID">Visit Type ID</label><br />
-    <input formControlName="visitTypeID" type="number" id="e_visitTypeID" name="visitTypeID" />
-  </div>
-
-  <div>
-    
-    <label for="e_visitDuration">Visit Duration (min)</label><br />
-    <select formControlName="visitDuration" id="e_visitDuration" name="visitDuration" >
-      <option value="" disabled>select the duration (min)</option>
-      <option value="15">15</option>
-      <option value="30">30</option>
-      <option value="60">60</option>
-      </select>
-  </div>
-
-<div>
-  <label for="e_visitDate">Visit Date/Time</label><br />
-  <input
-    formControlName="visitDate"
-    type="datetime-local"
-    id="e_visitDate"
-    name="visitDate"
-    businessHours
-    businessHoursStart="09:00"
-    businessHoursEnd="21:00"
-    businessHoursDays="1,2,3,4,5,6"
-  />
-
-  @if (editVisitForm.get('visitDate')?.touched) {
-    @if (editVisitForm.get('visitDate')?.errors?.['businessHours']; as err) {
-      <div class="error">
-        @switch (err.reason) {
-          @case ('invalidDate') { Please pick a valid date and time. }
-          @case ('nonWorkingDay') { Only Mon-Sat are allowed. }
-          @case ('offHours') {
-            Time must be between {{ err.allowed.start }} and {{ err.allowed.end }}
-            {{ err.allowed.endInclusive ? '(inclusive)' : '' }}. You chose {{ err.picked }}.
-          }
+    <div>
+      <label for="e_patientID">Patient</label><br />
+      <select formControlName="patientID" id="e_patientID" name="patientID">
+        @for (p of AllPatients; track p.patientID) {
+          <option [ngValue]="p.patientID">{{ p.patientName }}</option>
         }
-      </div>
-    }
-  }
-</div>
+      </select>
+    </div>
 
+    <div>
+      <label for="e_doctorID">Doctor</label><br />
+      <select formControlName="doctorID" id="e_doctorID" name="doctorID">
+        @for (d of AllDoctors; track d.doctorID) {
+          <option [ngValue]="d.doctorID">{{ d.doctorName }}</option>
+        }
+      </select>
+    </div>
 
-  <!-- <div>
-    <label for="e_visitFee">Visit Fee</label><br />
-    <input formControlName="visitFee" type="number" id="e_visitFee" name="visitFee" />
-  </div> -->
+    <div>
+      <label for="e_visitType">Visit Type</label><br />
+      <select formControlName="visitType" id="e_visitType" name="visitType">
+        <option [ngValue]="'Consultation'">Consultation</option>
+        <option [ngValue]="'Follow-Up'">Follow-Up</option>
+        <option [ngValue]="'Emergency'">Emergency</option>
+      </select>
+    </div>
 
-  <div>
-    <button type="submit" [disabled]="editVisitForm.invalid">Edit Visit</button>
-    <button type="button" (click)="deactivateEditForm()">cancel</button>
-  </div>
-</form>
+    <div>
+      <label for="e_visitDuration">Visit Duration (min)</label><br />
+      <select formControlName="visitDuration" id="e_visitDuration" name="visitDuration">
+        @for (duration of durationOptions; track duration) {
+          <option [ngValue]="duration">{{ duration }}</option>
+        }
+      </select>
+    </div>
+
+    <div>
+      <label for="e_visitDate">Visit Date/Time</label><br />
+      <input
+        formControlName="visitDate"
+        type="datetime-local"
+        id="e_visitDate"
+        name="visitDate"
+        businessHours
+        businessHoursStart="09:00"
+        businessHoursEnd="21:00"
+        businessHoursDays="1,2,3,4,5,6"
+      />
+    </div>
+
+    <!-- <div>
+      <label for="e_visitFee">Visit Fee</label><br />
+      <input formControlName="visitFee" type="number" id="e_visitFee" name="visitFee" min="0" />
+    </div> -->
+
+    <div>
+      <button type="submit" [disabled]="editVisitForm.invalid">Update Visit</button>
+      <button type="button" (click)="deactivateEditForm()">Cancel</button>
+    </div>
+  </form>
 }
 
+<!-- VISITS TABLE -->
 <table class="visits-table">
   <thead>
     <tr>
@@ -153,7 +169,6 @@
       <th>Patient Name</th>
       <th>Doctor Name</th>
       <th>Visit Type</th>
-      <th>Visit Type ID</th>
       <th>Visit Duration</th>
       <th>Visit Date</th>
       <th>Visit Fee</th>
@@ -161,33 +176,20 @@
     </tr>
   </thead>
   <tbody>
-    @for (visit of AllVisits; track visit) {
-    <tr>
-      <td>{{ visit.visitID }}</td>
-      <td>
-        @for (p of AllPatients; track p){
-        @if(p.visitID==visit.visitID){
-        {{p.patientName}}
-        }
-        }
-      </td>
-      <td>
-        @for (d of AllDoctors; track d){
-        @if(d.visitID==visit.visitID){
-        {{d.doctorName}}
-        }
-        }
-      </td>
-      <td>{{ visit.visitType }}</td>
-      <td>{{ visit.visitTypeID }}</td>
-      <td>{{ visit.visitDuration }}</td>
-      <td>{{ displayDate(visit.visitDate) }}</td>
-      <td>{{ visit.visitFee }}</td>
-      <td class="actions">
-        <button type="button" class="btn btn-edit" (click)="activateEditForm(visit)">Edit</button>
-        <button type="button" class="btn btn-delete" (click)="deleteAction(visit.visitID)">Delete</button>
-      </td>
-    </tr>
+    @for (visit of AllVisits; track visit.visitID) {
+      <tr>
+        <td>{{ visit.visitID }}</td>
+        <td>{{ visit.patientID | patientName: AllPatients }}</td>
+        <td>{{ visit.doctorID | doctorName: AllDoctors }}</td>
+        <td>{{ visit.visitType }}</td>
+        <td>{{ visit.visitDuration }} min</td>
+        <td>{{ displayDate(visit.visitDate) }}</td>
+        <td>{{ visit.visitFee | currency }}</td>
+        <td class="actions">
+          <button type="button" class="btn btn-edit" (click)="activateEditForm(visit)">Edit</button>
+          <button type="button" class="btn btn-delete" (click)="deleteAction(visit.visitID)">Delete</button>
+        </td>
+      </tr>
     }
   </tbody>
 </table>

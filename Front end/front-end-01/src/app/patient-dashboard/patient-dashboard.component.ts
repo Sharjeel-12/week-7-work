@@ -152,27 +152,21 @@ get EditForm(){
   // deletes the patient record 
   deleteAction(id: number ): void {
 
-
-    this.dataService.getPatientByID(id).subscribe(
-{
-  next:(p_delete)=>{
-    if(this.AllVisits.some(v=>v.visitID==p_delete.visitID)){
+    if(this.AllVisits.some(v=>v.patientID==id)){
       alert("Sorry this patient record cannot be deleted as this patient has a scheduled appointment");
     }
     else{
       this.dataService.deletePatientByID(id).subscribe(
         {
           next: (res) => {
-            alert("deleted patient record successfully");
             this.AllPatients.splice(this.AllPatients.findIndex(p => p.patientID === id), 1);
+            alert("deleted patient record successfully");
           }
         }
       )
       
     }
-  }
-}
-)
+
 
     
 
