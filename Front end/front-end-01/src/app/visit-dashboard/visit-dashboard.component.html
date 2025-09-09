@@ -34,15 +34,40 @@
       </select>
   </div>
 
-  <div>
-    <label for="visitDate">Visit Date/Time</label><br />
-    <input formControlName="visitDate" type="datetime-local" id="visitDate" name="visitDate" />
-  </div>
+<div>
+  <label for="visitDate">Visit Date/Time</label><br />
+  <input
+    formControlName="visitDate"
+    type="datetime-local"
+    id="visitDate"
+    name="visitDate"
+    businessHours
+    businessHoursStart="09:00"
+    businessHoursEnd="21:00"
+    businessHoursDays="1,2,3,4,5,6"
+  />
 
-  <div>
+  @if (addVisitForm.get('visitDate')?.touched) {
+    @if (addVisitForm.get('visitDate')?.errors?.['businessHours']; as err) {
+      <div class="error">
+        @switch (err.reason) {
+          @case ('invalidDate') { Please pick a valid date and time. }
+          @case ('nonWorkingDay') { Only Mon–Sat are allowed. }
+          @case ('offHours') {
+            Time must be between {{ err.allowed.start }} and {{ err.allowed.end }}
+            {{ err.allowed.endInclusive ? '(inclusive)' : '' }}. You chose {{ err.picked }}.
+          }
+        }
+      </div>
+    }
+  }
+</div>
+
+
+  <!-- <div>
     <label for="visitFee">Visit Fee</label><br />
     <input formControlName="visitFee" type="number" id="visitFee" name="visitFee" />
-  </div>
+  </div> -->
 
   <div>
     <button type="submit" [disabled]="addVisitForm.invalid || addVisitForm.pending">Add Visit</button>
@@ -69,22 +94,53 @@
   </div>
 
   <div>
+    
     <label for="e_visitDuration">Visit Duration (min)</label><br />
-    <input formControlName="visitDuration" type="number" id="e_visitDuration" name="visitDuration" />
+    <select formControlName="visitDuration" id="e_visitDuration" name="visitDuration" >
+      <option value="" disabled>select the duration (min)</option>
+      <option value="15">15</option>
+      <option value="30">30</option>
+      <option value="60">60</option>
+      </select>
   </div>
 
-  <div>
-    <label for="e_visitDate">Visit Date/Time</label><br />
-    <input formControlName="visitDate" type="datetime-local" id="e_visitDate" name="visitDate" />
-  </div>
+<div>
+  <label for="e_visitDate">Visit Date/Time</label><br />
+  <input
+    formControlName="visitDate"
+    type="datetime-local"
+    id="e_visitDate"
+    name="visitDate"
+    businessHours
+    businessHoursStart="09:00"
+    businessHoursEnd="21:00"
+    businessHoursDays="1,2,3,4,5,6"
+  />
 
-  <div>
+  @if (editVisitForm.get('visitDate')?.touched) {
+    @if (editVisitForm.get('visitDate')?.errors?.['businessHours']; as err) {
+      <div class="error">
+        @switch (err.reason) {
+          @case ('invalidDate') { Please pick a valid date and time. }
+          @case ('nonWorkingDay') { Only Mon-Sat are allowed. }
+          @case ('offHours') {
+            Time must be between {{ err.allowed.start }} and {{ err.allowed.end }}
+            {{ err.allowed.endInclusive ? '(inclusive)' : '' }}. You chose {{ err.picked }}.
+          }
+        }
+      </div>
+    }
+  }
+</div>
+
+
+  <!-- <div>
     <label for="e_visitFee">Visit Fee</label><br />
     <input formControlName="visitFee" type="number" id="e_visitFee" name="visitFee" />
-  </div>
+  </div> -->
 
   <div>
-    <button type="submit" [disabled]="editVisitForm.invalid || editVisitForm.pending">Edit Visit</button>
+    <button type="submit" [disabled]="editVisitForm.invalid">Edit Visit</button>
     <button type="button" (click)="deactivateEditForm()">cancel</button>
   </div>
 </form>

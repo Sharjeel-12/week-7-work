@@ -60,10 +60,10 @@ get EditForm(){
       patientDescription: this.addPatientForm.value.patientDescription,
     };
     if (this.AllPatients.some(p => p.patientID === patient.patientID) && patient.patientID !== null) {
-      alert("The doctor ID you just entered already exists. Please  try a unique value for each patient");
+      alert("The patient ID you just entered already exists. Please  try a unique value for each patient");
     }
     else if(this.AllPatients.some(p => p.patientEmail === patient.patientEmail)&& patient.patientEmail !== null){
-      alert("The doctor email you just entered already exists. Please  try a unique email for each patient");
+      alert("The patient email you just entered already exists. Please  try a unique email for each patient");
 
     }
     else {
@@ -115,14 +115,16 @@ get EditForm(){
       patientPhone: this.editPatientForm.value.patientPhone,
       patientDescription: this.editPatientForm.value.patientDescription,
     };
-    if (this.AllPatients.some(p => p.patientID === patient.patientID) && patient.patientID !== null) {
+    const filtered=this.AllPatients.filter(p=>p.patientID !== patient.patientID);
+
+    if (filtered.some(p => p.patientID === patient.patientID) && patient.patientID !== null) {
       alert("The doctor ID you just entered already exists. Please  try a unique value for each patient");
     }
-    else if(this.AllPatients.some(p => p.patientEmail === patient.patientEmail)&& patient.patientEmail !== null){
+    else if(filtered.some(p => p.patientEmail === patient.patientEmail)&& patient.patientEmail !== null){
       alert("The doctor email you just entered already exists. Please  try a unique email for each patient");
 
     }
-    else if(this.AllPatients.some(p => p.visitID === patient.visitID)&& patient.visitID !== null){
+    else if(filtered.some(p => p.visitID === patient.visitID)&& patient.visitID !== null){
       alert("The doctor email you just entered already exists. Please  try a unique email for each patient");
 
     }
@@ -148,9 +150,13 @@ get EditForm(){
   }
 
   // deletes the patient record 
-  deleteAction(id: number | null | undefined): void {
+  deleteAction(id: number ): void {
 
-    if(this.AllVisits.some(v=>v.visitID==id)){
+
+    this.dataService.getPatientByID(id).subscribe(
+{
+  next:(p_delete)=>{
+    if(this.AllVisits.some(v=>v.visitID==p_delete.visitID)){
       alert("Sorry this patient record cannot be deleted as this patient has a scheduled appointment");
     }
     else{
@@ -164,6 +170,10 @@ get EditForm(){
       )
       
     }
+  }
+}
+)
+
     
 
 
