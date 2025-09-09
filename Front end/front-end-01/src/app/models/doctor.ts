@@ -1,5 +1,5 @@
 export interface Doctor {
-    doctorID: number|null|undefined,
+    doctorID: number,
     visitID:  number|null|undefined,
     doctorName:  string|null|undefined,
     doctorEmail:  string|null|undefined,

@@ -4,6 +4,8 @@ import { DoctorDataService } from '../Services/doctor-data.service';
 import { Doctor } from '../models/doctor';
 import { CreateDoctorDto } from '../models/create-doctor-dto';
 import { SearchFilterDirective } from '../directives/search-filter.directive';
+import { VisitDataService } from '../Services/visits-data.service';
+import { Visit } from '../models/visit';
 @Component({
   selector: 'app-doctor-dashboard',
   standalone: true,
@@ -13,8 +15,8 @@ import { SearchFilterDirective } from '../directives/search-filter.directive';
   styleUrl: './doctor-dashboard.component.scss'
 })
 export class DoctorDashboardComponent {
-  constructor(private dataService: DoctorDataService) { }
-
+  constructor(private dataService: DoctorDataService,private visit_data:VisitDataService) { }
+  AllVisits!:Visit[];
   addDoctorForm!: FormGroup;
   editDoctorForm!: FormGroup;
 
@@ -149,16 +151,27 @@ export class DoctorDashboardComponent {
   }
 
   // deletes the doctor record 
-  deleteAction(id: number | null | undefined): void {
-    console.log(id);
-    this.dataService.deleteDoctorByID(id).subscribe(
-      {
-        next: (res) => {
-          alert("deleted patient record successfully");
-          this.AllDoctors.splice(this.AllDoctors.findIndex(d => d.doctorID === id), 1);
+  deleteAction(id: number): void {
+     this.dataService.getDoctorByID(id).subscribe(
+{
+  next:(d_delete)=>{
+    if(this.AllVisits.some(v=>v.visitID==d_delete.visitID)){
+      alert("Sorry this doctor record cannot be deleted as this doctor has a scheduled appointment");
+    }
+    else{
+      this.dataService.deleteDoctorByID(id).subscribe(
+        {
+          next: (res) => {
+            alert("deleted doctor record successfully");
+            this.AllDoctors.splice(this.AllDoctors.findIndex(d => d.doctorID === id), 1);
+          }
         }
-      }
-    )
+      )
+      
+    }
+  }
+}
+)
   }
 
 
