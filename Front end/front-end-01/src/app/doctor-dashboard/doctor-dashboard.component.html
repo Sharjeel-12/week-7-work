@@ -1,159 +1,185 @@
 <h2>Doctors</h2>
+
+<!-- Search + page size -->
+<div style="display:flex; gap:24px; align-items:flex-end; margin-bottom:12px;">
   <div>
-    <label for="search-field">Search patient record here</label>
-    <br>
+    <label for="search-field">Search doctor record here</label><br />
     <input
-    type="text"
-    id="search-field"
-    placeholder="Search doctors by ID, name, email, or phone..."
-    [searchFilter]="AllDoctors"
-    [searchFields]="['doctorID','doctorName','doctorEmail','doctorPhone','specialization']"
-    [minChars]="1"
-    [showAllWhenEmpty]="true"
-    (searchResults)="visibleDoctors = $event"
-  />
-
-  </div>
-<button (click)="activateForm()" class="section-title" class="add-btn">+Add New Doctor</button>
-@if(AddBtnPressed){
-<form [formGroup]="addDoctorForm" (ngSubmit)="onSubmit()" id="addDoctorForm" class="doctor-form">
-  <div>
-    <label for="doctorID">Doctor ID</label><br />
-    <input formControlName="doctorID" type="number" id="doctorID" name="doctorID" />
-    @if(AddForm['doctorID'].touched && AddForm['doctorID'].invalid){
-    <div class="err-msg">Enter a valid doctor ID</div>
-    }
+      type="text"
+      id="search-field"
+      placeholder="Search doctors by ID, name, email, phone, or specialization..."
+      [formControl]="searchFC"
+      style="min-width:320px;"
+    />
   </div>
 
   <div>
-    <label for="doctorName">Doctor Name</label><br />
-    <input formControlName="doctorName" type="text" id="doctorName" name="doctorName" />
-    @if(AddForm['doctorName'].touched && AddForm['doctorName'].invalid){
-    <div class="err-msg">Enter a valid doctor Name</div>
-    }
+    <label for="pageSize">Records per page</label><br />
+    <select id="pageSize" [value]="pageSize" (change)="changePageSize(($any($event.target).value))">
+      @for (sz of pageSizeOptions; track sz) {
+        <option [value]="sz">{{ sz }}</option>
+      }
+    </select>
   </div>
+</div>
 
-  <div>
-    <label for="doctorEmail">Doctor Email</label><br />
-    <input formControlName="doctorEmail" type="text" id="doctorEmail" name="doctorEmail" />
-    @if(AddForm['doctorEmail'].touched && AddForm['doctorEmail'].invalid){
-    @if(AddForm['doctorEmail'].errors?.["required"]){
-    <div class="err-msg">Username is required</div>
-    }
-    @if(AddForm['doctorEmail'].errors?.["minlength"]){
-    <div class="err-msg">Username must be at least {{AddForm['doctorEmail'].errors?.['minlength'].requiredLength}}
-      characters.</div>
-    }
-    }
-  </div>
+<button (click)="activateForm()" class="add-btn">+Add New Doctor</button>
 
-  <div>
-    <label for="doctorPhone">Doctor Phone</label><br />
-    <input formControlName="doctorPhone" type="text" id="doctorPhone" name="doctorPhone" />
-  </div>
+@if (AddBtnPressed) {
+  <form [formGroup]="addDoctorForm" (ngSubmit)="onSubmit()" id="addDoctorForm" class="doctor-form">
+    <div>
+      <label for="doctorID">Doctor ID</label><br />
+      <input formControlName="doctorID" type="number" id="doctorID" name="doctorID" />
+      @if (AddForm['doctorID'].touched && AddForm['doctorID'].invalid) {
+        <div class="err-msg">Enter a valid doctor ID</div>
+      }
+    </div>
 
-  <div>
-    <label for="specialization">Doctor Description</label><br />
-    <textarea formControlName="specialization" id="specialization" name="specialization"></textarea>
-  </div>
+    <div>
+      <label for="doctorName">Doctor Name</label><br />
+      <input formControlName="doctorName" type="text" id="doctorName" name="doctorName" />
+      @if (AddForm['doctorName'].touched && AddForm['doctorName'].invalid) {
+        <div class="err-msg">Enter a valid doctor Name</div>
+      }
+    </div>
 
-  <div>
-    <button [disabled]="!(addDoctorForm.valid)" type="submit">Add Doctor</button>
-    <button (click)="deactivateForm()">cancel</button>
-  </div>
-</form>
+    <div>
+      <label for="doctorEmail">Doctor Email</label><br />
+      <input formControlName="doctorEmail" type="text" id="doctorEmail" name="doctorEmail" />
+      @if (AddForm['doctorEmail'].touched && AddForm['doctorEmail'].invalid) {
+        @if (AddForm['doctorEmail'].errors?.['required']) {
+          <div class="err-msg">Username is required</div>
+        }
+        @if (AddForm['doctorEmail'].errors?.['minlength']) {
+          <div class="err-msg">
+            Username must be at least
+            {{ AddForm['doctorEmail'].errors?.['minlength'].requiredLength }} characters.
+          </div>
+        }
+      }
+    </div>
+
+    <div>
+      <label for="doctorPhone">Doctor Phone</label><br />
+      <input formControlName="doctorPhone" type="text" id="doctorPhone" name="doctorPhone" />
+      @if (AddForm['doctorPhone'].touched && AddForm['doctorPhone'].invalid) {
+        <div class="err-msg">Enter a valid doctor Phone</div>
+      }
+    </div>
+
+    <div>
+      <label for="specialization">Doctor Description</label><br />
+      <textarea formControlName="specialization" id="specialization" name="specialization"></textarea>
+    </div>
+
+    <div>
+      <button [disabled]="!(addDoctorForm.valid)" type="submit">Add Doctor</button>
+      <button type="button" (click)="deactivateForm()">cancel</button>
+    </div>
+  </form>
 }
 
-<!-- Edit button form starts here   -->
-@if(EditBtnPressed){
-<form [formGroup]="editDoctorForm" (ngSubmit)="onEdit()" id="editDoctorForm" class="doctor-form">
-  <div>
-    <label for="doctorID">Doctor ID</label><br />
-    <input formControlName="doctorID" type="number" id="doctorID" name="doctorID" />
-    @if(EditForm['doctorID'].touched && EditForm['doctorID'].invalid){
-    <div class="err-msg">Enter a valid doctor ID</div>
-    }
-  </div>
+@if (EditBtnPressed) {
+  <form [formGroup]="editDoctorForm" (ngSubmit)="onEdit()" id="editDoctorForm" class="doctor-form">
+    <div>
+      <label for="doctorID">Doctor ID</label><br />
+      <input formControlName="doctorID" type="number" id="doctorID" name="doctorID" />
+      @if (EditForm['doctorID'].touched && EditForm['doctorID'].invalid) {
+        <div class="err-msg">Enter a valid doctor ID</div>
+      }
+    </div>
 
-  <div>
-    <label for="visitID">Visit ID</label><br />
-    <input formControlName="visitID" type="number" id="visitID" name="visitID" />
-    @if(EditForm['doctorName'].touched && EditForm['doctorName'].invalid){
-    <div class="err-msg">Enter a valid doctor Name</div>
-    }
-  </div>
+    <div>
+      <label for="visitID">Visit ID</label><br />
+      <input formControlName="visitID" type="number" id="visitID" name="visitID" />
+    </div>
 
-  <div>
-    <label for="doctorName">Doctor Name</label><br />
-    <input formControlName="doctorName" type="text" id="doctorName" name="doctorName" />
-    @if(EditForm['doctorName'].touched && EditForm['doctorName'].invalid){
-    <div class="err-msg">Enter a valid doctor Name</div>
-    }
-  </div>
+    <div>
+      <label for="doctorName">Doctor Name</label><br />
+      <input formControlName="doctorName" type="text" id="doctorName" name="doctorName" />
+      @if (EditForm['doctorName'].touched && EditForm['doctorName'].invalid) {
+        <div class="err-msg">Enter a valid doctor Name</div>
+      }
+    </div>
 
-  <div>
-    <label for="doctorEmail">Doctor Email</label><br />
-    <input formControlName="doctorEmail" type="text" id="doctorEmail" name="doctorEmail" />
-    @if(EditForm['doctorEmail'].touched && EditForm['doctorEmail'].invalid){
-    @if(EditForm['doctorEmail'].errors?.["required"]){
-    <div class="err-msg">Username is required</div>
-    }
-    @if(EditForm['doctorEmail'].errors?.["minlength"]){
-    <div class="err-msg">Username must be at least {{EditForm['doctorEmail'].errors?.['minlength'].requiredLength}}
-      characters.</div>
-    }
-    }
-  </div>
+    <div>
+      <label for="doctorEmail">Doctor Email</label><br />
+      <input formControlName="doctorEmail" type="text" id="doctorEmail" name="doctorEmail" />
+      @if (EditForm['doctorEmail'].touched && EditForm['doctorEmail'].invalid) {
+        @if (EditForm['doctorEmail'].errors?.['required']) {
+          <div class="err-msg">Username is required</div>
+        }
+        @if (EditForm['doctorEmail'].errors?.['minlength']) {
+          <div class="err-msg">
+            Username must be at least
+            {{ EditForm['doctorEmail'].errors?.['minlength'].requiredLength }} characters.
+          </div>
+        }
+      }
+    </div>
 
-  <div>
-    <label for="doctorPhone">Doctor Phone</label><br />
-    <input formControlName="doctorPhone" type="text" id="doctorPhone" name="doctorPhone" />
-    @if(EditForm['doctorPhone'].touched && EditForm['doctorPhone'].invalid){
-    <div class="err-msg">this can't be blank</div>  
-    }
-  </div>
+    <div>
+      <label for="doctorPhone">Doctor Phone</label><br />
+      <input formControlName="doctorPhone" type="text" id="doctorPhone" name="doctorPhone" />
+      @if (EditForm['doctorPhone'].touched && EditForm['doctorPhone'].invalid) {
+        <div class="err-msg">this can't be blank</div>
+      }
+    </div>
 
-  <div>
-    <label for="specialization">Doctor Description</label><br />
-    <textarea formControlName="specialization" id="specialization" name="specialization"></textarea>
-  </div>
+    <div>
+      <label for="specialization">Doctor Description</label><br />
+      <textarea formControlName="specialization" id="specialization" name="specialization"></textarea>
+    </div>
 
-  <div>
-    <button [disabled]="!(editDoctorForm.valid)" type="submit">Edit Doctor Details</button>
-    <button (click)="deactivateEditForm()">cancel</button>
-  </div>
-</form>
+    <div>
+      <button [disabled]="!(editDoctorForm.valid)" type="submit">Edit Doctor Details</button>
+      <button type="button" (click)="deactivateEditForm()">cancel</button>
+    </div>
+  </form>
 }
-
-
-
 
 <table class="doctors-table">
   <thead>
     <tr>
-      <th>Doctor ID</th>
-      <!-- <th>Visit ID</th> -->
-      <th>Doctor Name</th>
-      <th>Doctor Email</th>
-      <th>Doctor Phone</th>
-      <th>Doctor Description</th>
+      <th (click)="onSort('doctorID')"          style="cursor:pointer">Doctor ID {{ sortArrow('doctorID') }}</th>
+      <th (click)="onSort('doctorName')"        style="cursor:pointer">Doctor Name {{ sortArrow('doctorName') }}</th>
+      <th (click)="onSort('doctorEmail')"       style="cursor:pointer">Doctor Email {{ sortArrow('doctorEmail') }}</th>
+      <th (click)="onSort('doctorPhone')"       style="cursor:pointer">Doctor Phone {{ sortArrow('doctorPhone') }}</th>
+      <th (click)="onSort('specialization')"    style="cursor:pointer">Doctor Description {{ sortArrow('specialization') }}</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
-
-    @for(doctor of AllDoctors; track doctor){
-    <tr>
-      <td>{{doctor.doctorID}}</td>
-      <td>{{doctor.doctorName}}</td>
-      <td>{{doctor.doctorEmail}}</td>
-      <td>{{doctor.doctorPhone}}</td>
-      <td>{{doctor.specialization}}</td>
-      <td class="actions">
-        <button type="button" class="btn btn-edit" (click)="activateEditForm(doctor)">Edit</button>
-        <button type="button" class="btn btn-delete" (click)="deleteAction(doctor.doctorID)">Delete</button>
-      </td>
-    </tr>
+    @for (doctor of visibleDoctors; track doctor.doctorID) {
+      <tr>
+        <td>{{ doctor.doctorID }}</td>
+        <td>{{ doctor.doctorName }}</td>
+        <td>{{ doctor.doctorEmail }}</td>
+        <td>{{ doctor.doctorPhone }}</td>
+        <td>{{ doctor.specialization }}</td>
+        <td class="actions">
+          <button type="button" class="btn btn-edit" (click)="activateEditForm(doctor)">Edit</button>
+          <button type="button" class="btn btn-delete" (click)="deleteAction(doctor.doctorID)">Delete</button>
+        </td>
+      </tr>
     }
   </tbody>
 </table>
+
+<!-- Pager -->
+<div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px;">
+  <div>
+    Showing
+    {{ total === 0 ? 0 : ((page - 1) * pageSize + 1) }}
+    –
+    {{ math.min(page * pageSize, total) }}
+    of {{ total }}
+  </div>
+  <div style="display:flex; gap:6px; align-items:center;">
+    <button (click)="firstPage()" [disabled]="page === 1"> First</button>
+    <button (click)="prevPage()"  [disabled]="page === 1"> Prev</button>
+    <span>Page {{ page }} / {{ math.max(1, math.ceil(total / pageSize)) }}</span>
+    <button (click)="nextPage()"  [disabled]="page >= math.ceil(total / pageSize)">Next </button>
+    <button (click)="lastPage()"  [disabled]="page >= math.ceil(total / pageSize)">Last </button>
+  </div>
+</div>

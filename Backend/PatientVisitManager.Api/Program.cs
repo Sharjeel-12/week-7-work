@@ -131,6 +131,7 @@ builder.Services.AddScoped<IFeeScheduleRepository, FeeScheduleRepository>();
 builder.Services.AddScoped<IActivityLogRepository, ActivityLogRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IFeeCalculator, FeeCalculator>();
+builder.Services.AddScoped<IRequestLogWriter, RequestLogWriter>();
 
 var app = builder.Build();
 
@@ -145,7 +146,7 @@ app.UseSwaggerUI();
 
 app.UseCors("dev");
 
-// 🔻 Serve login.html by default at root
+// Serve login.html by default at root
 var defaultFiles = new DefaultFilesOptions();
 defaultFiles.DefaultFileNames.Clear();
 defaultFiles.DefaultFileNames.Add("login.html");
@@ -158,7 +159,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// 🔻 Fallback to login.html for non-API routes (SPA-friendly)
+//Fallback to login.html for non-API routes
 app.MapFallbackToFile("/login.html");
 
 // DB Connectivity Check (startup)

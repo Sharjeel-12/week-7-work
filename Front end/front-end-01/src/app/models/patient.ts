@@ -1,6 +1,6 @@
 export interface Patient {
 
-    patientID:number|null|undefined,
+    patientID:number,
     visitID:string|null|undefined,
     patientName:string|null|undefined,
     patientEmail:string|null|undefined,
