@@ -131,6 +131,7 @@ builder.Services.AddScoped<IFeeScheduleRepository, FeeScheduleRepository>();
 builder.Services.AddScoped<IActivityLogRepository, ActivityLogRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IFeeCalculator, FeeCalculator>();
+builder.Services.AddScoped<IRequestLogWriter, RequestLogWriter>();
 
 var app = builder.Build();
 

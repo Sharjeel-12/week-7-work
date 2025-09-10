@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\carelite work\\trial 3\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj": {}
+    "E:\\Cloned Repos\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj": {}
   },
   "projects": {
-    "C:\\carelite work\\trial 3\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj": {
+    "E:\\Cloned Repos\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\carelite work\\trial 3\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj",
+        "projectUniqueName": "E:\\Cloned Repos\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj",
         "projectName": "PatientVisitManager.Api",
-        "projectPath": "C:\\carelite work\\trial 3\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj",
-        "packagesPath": "C:\\Users\\sharjeel.farzad\\.nuget\\packages\\",
-        "outputPath": "C:\\carelite work\\trial 3\\week-7-work\\Backend\\PatientVisitManager.Api\\obj\\",
+        "projectPath": "E:\\Cloned Repos\\week-7-work\\Backend\\PatientVisitManager.Api\\PatientVisitManager.Api.csproj",
+        "packagesPath": "C:\\Users\\wel\\.nuget\\packages\\",
+        "outputPath": "E:\\Cloned Repos\\week-7-work\\Backend\\PatientVisitManager.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sharjeel.farzad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net7.0": {
@@ -98,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

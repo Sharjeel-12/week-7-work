@@ -128,7 +128,7 @@ INSERT INTO doctors (
 select * from doctors
 
 -- Altering the visits table for good,
-select * from visits
+delete from visits
 ALTER TABLE Visits
 ADD PatientID INT NOT NULL,
     DoctorID INT NOT NULL;
@@ -213,4 +213,48 @@ BEGIN
         (@VID, @T, @TID, @Dur, @Date, @Time, @Fee, @PID, @DID);
 
     COMMIT TRANSACTION;
+END
+
+
+
+
+select * from users
+
+
+-- creating request log table
+
+IF OBJECT_ID('dbo.RequestLog', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.RequestLog (
+        Id            INT IDENTITY(1,1) PRIMARY KEY,
+        UserID        INT NULL,
+        LogMessage    NVARCHAR(500) NOT NULL,
+        StartTimeUtc  DATETIME2(3)  NOT NULL,
+        EndTimeUtc    DATETIME2(3)  NOT NULL,
+        [Date]        DATE          NOT NULL
+    );
+
+    CREATE INDEX IX_RequestLog_Date ON dbo.RequestLog([Date]);
+END
+
+
+select * from RequestLog
+
+
+-- activity logger here 
+IF OBJECT_ID('dbo.ActivityLogs', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.ActivityLogs
+    (
+        LogID        INT IDENTITY(1,1) PRIMARY KEY,
+        UserID       INT NULL,
+        LogMessage   NVARCHAR(500) NOT NULL,
+        ActivityTime TIME(3) NOT NULL,
+        ActivityDate DATE     NOT NULL,
+        CONSTRAINT FK_ActivityLogs_Users
+            FOREIGN KEY (UserID) REFERENCES dbo.Users(Id)
+    );
+
+    -- Useful index for filtering by user & date
+    CREATE INDEX IX_ActivityLogs_User_Date ON dbo.ActivityLogs(UserID, ActivityDate);
 END
