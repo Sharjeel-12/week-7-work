@@ -1,38 +1,71 @@
+using System.Data;
 using Microsoft.Data.SqlClient;
 using PatientVisitManager.Api.Repositories.Interfaces;
 
 namespace PatientVisitManager.Api.Repositories.Sql;
+
 public class ActivityLogRepository : BaseRepository, IActivityLogRepository
 {
     public ActivityLogRepository(IConfiguration cfg) : base(cfg) { }
-    public async Task LogAsync(string userEmail, string description)
+
+    // === Preferred: log by userId (nullable for anonymous/system actions)
+    public async Task LogAsync(int? userId, string message)
     {
-        using var conn = CreateConn(); await conn.OpenAsync();
-        int loggerId;
-        using (var getLogger = conn.CreateCommand())
-        {
-            getLogger.CommandText = "SELECT TOP 1 loggerID FROM dbo.loggers WHERE name=@N";
-            getLogger.Parameters.AddWithValue("@N", userEmail);
-            var existing = await getLogger.ExecuteScalarAsync();
-            if (existing == null)
-            {
-                using var ins = conn.CreateCommand();
-                ins.CommandText = "INSERT INTO dbo.loggers (name) OUTPUT INSERTED.loggerID VALUES (@N)";
-                ins.Parameters.AddWithValue("@N", userEmail);
-                loggerId = (int)(await ins.ExecuteScalarAsync() ?? 0);
-            }
-            else
-            {
-                loggerId = Convert.ToInt32(existing);
-            }
-        }
-        var now = DateTime.Now;
-        using var cmd = conn.CreateCommand();
-        cmd.CommandText = "INSERT INTO dbo.loggerActivities (activityDescription, loggerID, ActivityDate, ActivityTime) VALUES (@D,@L,@Date,@Time)";
-        cmd.Parameters.AddWithValue("@D", description);
-        cmd.Parameters.AddWithValue("@L", loggerId);
-        cmd.Parameters.AddWithValue("@Date", now.Date);
-        cmd.Parameters.AddWithValue("@Time", now.TimeOfDay);
+        await using var conn = CreateConn();
+        await conn.OpenAsync();
+
+        // Use DB clock in UTC to avoid app-server clock skew
+        const string sql = @"
+INSERT INTO dbo.ActivityLogs (UserID, LogMessage, ActivityTime, ActivityDate)
+VALUES (@UserID, @LogMessage, CONVERT(time(3), SYSUTCDATETIME()), CONVERT(date, SYSUTCDATETIME()));";
+
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = sql;
+        // Avoid AddWithValue surprises
+        var pUser = cmd.Parameters.Add("@UserID", SqlDbType.Int);
+        pUser.Value = (object?)userId ?? DBNull.Value;
+
+        var trimmed = message?.Length > 500 ? message.Substring(0, 500) : (message ?? string.Empty);
+        cmd.Parameters.Add("@LogMessage", SqlDbType.NVarChar, 500).Value = trimmed;
+
         await cmd.ExecuteNonQueryAsync();
     }
+
+    // === Convenience: log by email (we'll look up the Id)
+    public async Task LogByEmailAsync(string userEmail, string message)
+    {
+        int? userId = null;
+        await using var conn = CreateConn();
+        await conn.OpenAsync();
+
+        // Lookup user id by email (case-insensitive depends on collation)
+        const string getIdSql = "SELECT Id FROM dbo.Users WHERE Email = @Email";
+        await using (var getId = conn.CreateCommand())
+        {
+            getId.CommandText = getIdSql;
+            getId.Parameters.Add("@Email", SqlDbType.NVarChar, 256).Value = userEmail ?? string.Empty;
+            var idObj = await getId.ExecuteScalarAsync();
+            if (idObj != null && idObj != DBNull.Value)
+                userId = Convert.ToInt32(idObj);
+        }
+
+        // Insert the log row
+        const string insSql = @"
+INSERT INTO dbo.ActivityLogs (UserID, LogMessage, ActivityTime, ActivityDate)
+VALUES (@UserID, @LogMessage, CONVERT(time(3), SYSUTCDATETIME()), CONVERT(date, SYSUTCDATETIME()));";
+
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = insSql;
+        var pUser = cmd.Parameters.Add("@UserID", SqlDbType.Int);
+        pUser.Value = (object?)userId ?? DBNull.Value;
+
+        var trimmed = message?.Length > 500 ? message.Substring(0, 500) : (message ?? string.Empty);
+        cmd.Parameters.Add("@LogMessage", SqlDbType.NVarChar, 500).Value = trimmed;
+
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    // === Backward compatible shim
+    public Task LogAsync(string userEmail, string description)
+        => LogByEmailAsync(userEmail, description);
 }

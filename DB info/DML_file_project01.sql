@@ -1,6 +1,7 @@
 --use MuhammadSharjeelFarzadDB;
 use sharjeel_6609;
-use MuhammadSharjeelFarzadDB
+use MuhammadSharjeelFarzadDB;
+use MuhammadSharjeelFarzad_6609
 -- inserting values into the table named visit types
 Insert into visitTypes
 values (1,'Follow-Up'),(2,'Emergency'),(3,'Consultation');
@@ -126,3 +127,139 @@ INSERT INTO doctors (
 
 select * from doctors
 
+-- Altering the visits table for good,
+delete from visits
+ALTER TABLE Visits
+ADD PatientID INT NOT NULL,
+    DoctorID INT NOT NULL;
+
+
+ALTER TABLE Visits
+ADD CONSTRAINT FK_Visits_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID);
+
+ALTER TABLE Visits
+ADD CONSTRAINT FK_Visits_Doctors FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID);
+
+
+-- insert into visits table
+
+INSERT INTO visits (
+    visitID, patientID, doctorID, visitType, visitTypeID, visitDuration, visitDate, visitTime, visitFee
+) VALUES
+(1, 6, 10, 'Consultation', 1, 30, '2025-09-10', '10:30:00', 12000),
+(2, 12, 6, 'Emergency', 3, 60, '2025-09-10', '15:45:00', 18000),
+(3, 3, 2, 'Follow-Up', 2, 15, '2025-09-11', '11:00:00', 8000),
+(4, 20, 20, 'Consultation', 1, 30, '2025-09-11', '14:20:00', 11000),
+(5, 15, 8, 'Follow-Up', 2, 30, '2025-09-12', '09:15:00', 9000),
+(6, 1, 14, 'Emergency', 3, 60, '2025-09-12', '19:30:00', 17000),
+(7, 10, 4, 'Consultation', 1, 15, '2025-09-13', '12:10:00', 6000),
+(8, 13, 9, 'Follow-Up', 2, 30, '2025-09-13', '16:40:00', 9500),
+(9, 17, 13, 'Consultation', 1, 60, '2025-09-14', '10:00:00', 14000),
+(10, 9, 5, 'Emergency', 3, 30, '2025-09-14', '18:20:00', 16000),
+(11, 5, 16, 'Consultation', 1, 30, '2025-09-15', '13:00:00', 12000),
+(12, 19, 11, 'Follow-Up', 2, 15, '2025-09-15', '11:45:00', 7000),
+(13, 11, 19, 'Emergency', 3, 60, '2025-09-16', '20:30:00', 17500),
+(14, 2, 1, 'Consultation', 1, 30, '2025-09-16', '09:20:00', 10000),
+(15, 14, 17, 'Follow-Up', 2, 30, '2025-09-17', '15:30:00', 9500),
+(16, 7, 7, 'Consultation', 1, 60, '2025-09-17', '12:50:00', 13500),
+(17, 18, 15, 'Emergency', 3, 30, '2025-09-18', '19:10:00', 16000),
+(18, 4, 18, 'Consultation', 1, 30, '2025-09-18', '14:10:00', 12000),
+(19, 16, 3, 'Follow-Up', 2, 15, '2025-09-19', '10:30:00', 8000),
+(20, 8, 12, 'Consultation', 1, 30, '2025-09-19', '11:45:00', 11500);
+
+select * from visits
+delete from visits
+
+
+-- creating stored procedures for the better 
+CREATE PROCEDURE CreateVisit
+    @VID INT,
+    @T NVARCHAR(50),
+    @TID INT,
+    @Dur INT,
+    @Date DATE,
+    @Time TIME,
+    @Fee DECIMAL(10,2),
+    @PID INT,
+    @DID INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    BEGIN TRANSACTION;
+
+    -- Combine date + time into full datetime
+    DECLARE @NewVisitDateTime DATETIME = CAST(@Date AS DATETIME) + CAST(@Time AS DATETIME);
+
+    -- Check for overlap with same doctor
+    IF EXISTS (
+        SELECT 1
+        FROM Visits
+        WHERE DoctorID = @DID
+          AND (CAST(VisitDate AS DATETIME) + CAST(VisitTime AS DATETIME)) 
+              < DATEADD(MINUTE, @Dur, @NewVisitDateTime)
+          AND DATEADD(MINUTE, VisitDuration, (CAST(VisitDate AS DATETIME) + CAST(VisitTime AS DATETIME))) 
+              > @NewVisitDateTime
+    )
+    BEGIN
+        RAISERROR('Conflict: overlapping appointment', 16, 1);
+        ROLLBACK TRANSACTION;
+        RETURN;
+    END
+
+    -- Insert new visit
+    INSERT INTO Visits 
+        (VisitID, VisitType, VisitTypeID, VisitDuration, VisitDate, VisitTime, VisitFee, PatientID, DoctorID)
+    VALUES 
+        (@VID, @T, @TID, @Dur, @Date, @Time, @Fee, @PID, @DID);
+
+    COMMIT TRANSACTION;
+END
+
+
+
+
+select * from users
+
+
+-- creating request log table
+
+IF OBJECT_ID('dbo.RequestLog', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.RequestLog (
+        Id            INT IDENTITY(1,1) PRIMARY KEY,
+        UserID        INT NULL,
+        LogMessage    NVARCHAR(500) NOT NULL,
+        StartTimeUtc  DATETIME2(3)  NOT NULL,
+        EndTimeUtc    DATETIME2(3)  NOT NULL,
+        [Date]        DATE          NOT NULL
+    );
+
+    CREATE INDEX IX_RequestLog_Date ON dbo.RequestLog([Date]);
+END
+
+
+select * from RequestLog
+
+
+-- activity logger here 
+IF OBJECT_ID('dbo.ActivityLogs', 'U') IS NULL
+BEGIN
+    CREATE TABLE dbo.ActivityLogs
+    (
+        LogID        INT IDENTITY(1,1) PRIMARY KEY,
+        UserID       INT NULL,
+        LogMessage   NVARCHAR(500) NOT NULL,
+        ActivityTime TIME(3) NOT NULL,
+        ActivityDate DATE     NOT NULL,
+        CONSTRAINT FK_ActivityLogs_Users
+            FOREIGN KEY (UserID) REFERENCES dbo.Users(Id)
+    );
+
+    -- Useful index for filtering by user & date
+    CREATE INDEX IX_ActivityLogs_User_Date ON dbo.ActivityLogs(UserID, ActivityDate);
+END
+
+select * from ActivityLogs
+
+
+select * from users

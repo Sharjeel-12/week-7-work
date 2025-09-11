@@ -5,8 +5,10 @@ export interface Visit {
   visitType: string | null;      // "Emergency" | "Follow-Up" | "Consultation"
   visitTypeID: number | null;    // e.g., 1/2/3
   visitDuration: number | null;  // minutes
-  visitDate: string;      // ISO-like string e.g. "2025-08-08T00:14:00"
+  visitDate: string;             // ISO-like string e.g. "2025-08-08T00:14:00"
   visitFee: number | null;       // e.g., 17000
+  patientID: number | null;
+  doctorID: number | null;
 }
 
 export interface CreateVisitDto {
@@ -16,6 +18,8 @@ export interface CreateVisitDto {
   visitDuration: number;
   visitDate: string;
   visitFee: number;
+  patientID: number;
+  doctorID: number;
 }
 
 export interface UpdateVisitDto {
@@ -25,4 +29,6 @@ export interface UpdateVisitDto {
   visitDuration: number;
   visitDate: string;
   visitFee: number;
+  patientID: number;
+  doctorID: number;
 }
