@@ -40,7 +40,7 @@ body {
 /* Inputs */
 .signup-container input[type="text"],
 .signup-container input[type="email"],
-.signup-container input[type="password"] {
+.signup-container input[type="password"], .signup-container select{
   width: 100%;
   padding: 12px 10px;
   margin-bottom: 20px;

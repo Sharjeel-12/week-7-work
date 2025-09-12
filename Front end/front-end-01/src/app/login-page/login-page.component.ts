@@ -39,8 +39,8 @@ navigateToSignUp():void{
 ngOnInit(): void {
 
   this.loginForm= new FormGroup({
-    email:new FormControl<string|null>(null,[Validators.required,Validators.email]),
-    password:new FormControl<string|null>(null,[Validators.required,Validators.minLength(3)])
+    email:new FormControl<string|null>(null,{validators:[Validators.required,Validators.email],updateOn:"change"}),
+    password:new FormControl<string|null>(null,{validators:[Validators.required,Validators.minLength(3)],updateOn:"change"})
   })
 
   this.route.queryParams.subscribe(params => {

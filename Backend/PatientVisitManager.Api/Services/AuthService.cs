@@ -48,11 +48,18 @@ public class AuthService : IAuthService
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
         var expiryMinutes = int.Parse(_cfg["Jwt:ExpiryMinutes"] ?? "60");
         var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-            new Claim(ClaimTypes.Role, user.Role),
-            new Claim("uid", user.Id.ToString())
-        };
+    {
+        // Standard identity claims
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // DB user id (works with middleware)
+        new Claim(ClaimTypes.Name, user.Email ?? string.Empty),   // sets HttpContext.User.Identity.Name
+        new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
+        new Claim(ClaimTypes.Role, user.Role ?? "User"),
+
+        // JWT-standard claims (optional but nice)
+        new Claim(JwtRegisteredClaimNames.Sub, user.Email ?? string.Empty),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), // unique token id
+        new Claim("uid", user.Id.ToString()) // keep if you’re already reading this elsewhere
+    };
         var token = new JwtSecurityToken(
             issuer: _cfg["Jwt:Issuer"],
             audience: _cfg["Jwt:Audience"],

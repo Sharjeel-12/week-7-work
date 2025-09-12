@@ -3,7 +3,10 @@
   <form [formGroup]="signupForm" (ngSubmit)="registerUser()">
 
     <label for="userRole">Role</label>
-    <input type="text" id="userRole" placeholder="Enter role (Admin, Receptionist or Clinician)" formControlName="role">
+    <select id="userRole" formControlName="role">
+      <option value="Admin">Admin</option>
+      <option value="Receptionist">Receptionist</option>
+    </select>
     @if(f['role'].touched && f['role'].invalid){
     <div class="err-msg">A valid Role is Required</div>
     }
@@ -25,7 +28,8 @@
     <div class="err-msg">Password is required</div>
     }
     @if(f['password'].errors?.["minlength"]){
-    <div class="err-msg">Password must be at least {{f['password'].errors?.['minlength'].requiredLength}} characters.</div>
+    <div class="err-msg">Password must be at least {{f['password'].errors?.['minlength'].requiredLength}} characters.
+    </div>
     }
 
     }
@@ -37,4 +41,3 @@
   <a (click)="navigateToLogin()">Log In</a>
 
 </div>
-

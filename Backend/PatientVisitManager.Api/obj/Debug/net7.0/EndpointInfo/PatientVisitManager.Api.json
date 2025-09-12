@@ -751,8 +751,7 @@
           },
           "visitTypeID": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "visitDuration": {
             "type": "integer",
@@ -761,6 +760,17 @@
           "visitDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "visitTime": {
+            "$ref": "#/components/schemas/TimeSpan"
+          },
+          "patientID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctorID": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -895,6 +905,86 @@
         },
         "additionalProperties": false
       },
+      "TimeSpan": {
+        "type": "object",
+        "properties": {
+          "ticks": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "days": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "hours": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "milliseconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "microseconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "nanoseconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "minutes": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "seconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "totalDays": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalHours": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalMilliseconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalMicroseconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalNanoseconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalMinutes": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalSeconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateDoctorDto": {
         "type": "object",
         "properties": {
@@ -970,8 +1060,7 @@
           },
           "visitTypeID": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "visitDuration": {
             "type": "integer",
@@ -980,6 +1069,17 @@
           "visitDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "visitTime": {
+            "$ref": "#/components/schemas/TimeSpan"
+          },
+          "patientID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctorID": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1008,9 +1108,20 @@
             "type": "string",
             "format": "date-time"
           },
+          "visitTime": {
+            "$ref": "#/components/schemas/TimeSpan"
+          },
           "visitFee": {
             "type": "number",
             "format": "double"
+          },
+          "patientID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "doctorID": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

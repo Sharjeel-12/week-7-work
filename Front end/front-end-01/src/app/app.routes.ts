@@ -32,6 +32,12 @@ export const routes: Routes = [
           import('./doctor-dashboard/doctor-dashboard.component').then(m => m.DoctorDashboardComponent)
       },
       {
+        path: 'week-calendar',
+        canActivate: [authGuard, roleGuard(['Admin'])],
+        loadComponent: () =>
+          import('./visit-calendar/visit-calendar.component').then(m => m.VisitCalendarComponent)
+      },
+      {
         path: 'visits',
         canActivate: [authGuard, roleGuard(['Admin'])],
         loadComponent: () =>
@@ -69,6 +75,12 @@ export const routes: Routes = [
         canActivate: [authGuard, roleGuard(['Receptionist'])],
         loadComponent: () =>
           import('./visit-dashboard/visit-dashboard.component').then(m => m.VisitDashboardComponent)
+      },
+      {
+        path: 'week-calendar',
+        canActivate: [authGuard, roleGuard(['Receptionist'])],
+        loadComponent: () =>
+          import('./visit-calendar/visit-calendar.component').then(m => m.VisitCalendarComponent)
       },
       {
         path: 'fee-schedule',

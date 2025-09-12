@@ -13,7 +13,7 @@ baseUrl:string="http://localhost:49428/api/Patients";
   constructor(private http:HttpClient) {}
 
   getAllPatients():Observable<Patient[]>{
-    return this.http.get<Patient[]>(this.baseUrl,{headers:{'Authorization':'Bearer '+sessionStorage.getItem('access_token')}})
+    return this.http.get<Patient[]>(this.baseUrl)
   }
   getPatientByID(id:number):Observable<Patient>{
     return this.http.get<Patient>(this.baseUrl+`/${id}`,{headers:{'Authorization':'Bearer '+sessionStorage.getItem('access_token')}})
